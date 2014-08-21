@@ -63,7 +63,7 @@ public class NextEventCard extends BaseCard {
      * Creates the layout for the card and sets the components
      */
     @Override
-    protected void setUpCardLayout() {
+    public void setUpCardLayout() {
         // remember that we need the resource helper since this will be running from a different package
         helper = new ResourceHelper(getContext(), Utils.PACKAGE_NAME);
 
@@ -144,7 +144,7 @@ public class NextEventCard extends BaseCard {
      * use this to set any refreshed data to the cards layout
      */
     @Override
-    protected void refreshCardLayout() {
+    public void refreshCardLayout() {
         if (id != 0) {
             title.setText(titleText);
             timestamp.setText(timeText);

@@ -61,7 +61,7 @@ public class NextAlarmCard extends BaseCard {
      * Creates the layout for the card and sets the components
      */
     @Override
-    protected void setUpCardLayout() {
+    public void setUpCardLayout() {
         // remember that we need the resource helper since this will be running from a different package
         helper = new ResourceHelper(getContext(), Utils.PACKAGE_NAME);
 

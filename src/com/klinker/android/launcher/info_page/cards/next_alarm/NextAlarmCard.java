@@ -88,7 +88,7 @@ public class NextAlarmCard extends BaseCard {
      * use this to set any refreshed data to the cards layout
      */
     @Override
-    protected void refreshCardLayout() {
+    public void refreshCardLayout() {
         if (!TextUtils.isEmpty(alarm)) {
             time.setText(alarm);
             shouldShow(true);
